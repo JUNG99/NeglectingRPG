@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Heaㅣth : MonoBehaviour
+public class Health : MonoBehaviour
 {
     public float maxHealth = 100f; //최대체력
     public float currentHealth; //현재체럭
