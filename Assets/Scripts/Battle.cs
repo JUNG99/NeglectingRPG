@@ -11,6 +11,13 @@ public class Battle : MonoBehaviour
     private Health playerHealth;
     private Health enemyHealth;
 
+    private PlayerMove playerMove;
+
+
+    private void Start()
+    {
+        playerMove = GetComponent<PlayerMove>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy") && !isFighting)
@@ -25,15 +32,22 @@ public class Battle : MonoBehaviour
 
     void AttackEnemy()
     {
-        if(enemyHealth != null)
+        if (enemyHealth != null)
         {
             enemyHealth.TakeDamage(attackPower);
-            if(enemyHealth == null )
+            if (enemyHealth == null)
             {
                 isFighting = false;
                 CancelInvoke("AttackEney");
             }
         }
+    }
+
+    void EndBattle()
+    {
+        isFighting = false;
+        playerMove.isFighting = false;
+        CancelInvoke("AttackEnemy");
     }
         
 }

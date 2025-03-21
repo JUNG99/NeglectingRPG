@@ -131,10 +131,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 590993077180049516, guid: 1c3d82aa11542cf4f99e1c9b7b575e91, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3512092685909395900, guid: 1c3d82aa11542cf4f99e1c9b7b575e91, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1594346040}
+    - target: {fileID: 3512092685909395900, guid: 1c3d82aa11542cf4f99e1c9b7b575e91, type: 3}
+      propertyPath: spawnInterval
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6587440650929563370, guid: 1c3d82aa11542cf4f99e1c9b7b575e91, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -414,6 +422,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1591709427089551593, guid: f2bb81539cd533044a2621a27af980cd, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6132114457886991024, guid: f2bb81539cd533044a2621a27af980cd, type: 3}
+      propertyPath: attackPower
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367459644556573143, guid: f2bb81539cd533044a2621a27af980cd, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7769049399345232836, guid: f2bb81539cd533044a2621a27af980cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab; //俊呈固橇府普
     public Transform player; //敲饭捞绢困摹
-    public float spawnDistance = 5f; //利积己芭府
+    public float spawnDistance = 10f; //利积己芭府
     public float spawnInterval = 3f; //利积己林扁
 
     private void Start()
