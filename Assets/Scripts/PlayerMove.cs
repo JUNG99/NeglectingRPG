@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float moveSpeed = 2f; //이동 속도
 
-    // Update is called once per frame
     void Update()
     {
-        
+        //일정 속도로 앞으로 이동
+        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
     }
 }
