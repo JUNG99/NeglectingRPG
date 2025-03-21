@@ -144,6 +144,20 @@ MonoBehaviour:
   player: {fileID: 1594346040}
   spawnDistance: 5
   spawnInterval: 3
+--- !u!114 &622040427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622040420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df8e59d242c3de4890210fbd268ca9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +358,7 @@ GameObject:
   - component: {fileID: 1594346037}
   - component: {fileID: 1594346041}
   - component: {fileID: 1594346042}
+  - component: {fileID: 1594346043}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -477,6 +492,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+--- !u!114 &1594346043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594346036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df8e59d242c3de4890210fbd268ca9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &1890694368
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +596,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7882782237392284317, guid: 1c3d82aa11542cf4f99e1c9b7b575e91, type: 3}
       insertIndex: -1
       addedObject: {fileID: 622040426}
+    - targetCorrespondingSourceObject: {fileID: 7882782237392284317, guid: 1c3d82aa11542cf4f99e1c9b7b575e91, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 622040427}
   m_SourcePrefab: {fileID: 100100000, guid: 1c3d82aa11542cf4f99e1c9b7b575e91, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
