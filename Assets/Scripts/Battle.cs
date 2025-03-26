@@ -1,31 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class Battle : MonoBehaviour
 {
-    public float attackPower = 20f; //공격력
-    public float attackInterval = 1.5f; //공격주기
+    public float attackPower = 50f; // 공격력
+    public float attackInterval = 1.5f; // 공격 주기
     public bool isFighting = false;
+
     private Health playerHealth;
     private Health enemyHealth;
-
     private PlayerMove playerMove;
-
 
     private void Start()
     {
         playerMove = GetComponent<PlayerMove>();
+        playerHealth = GetComponent<Health>(); // 플레이어 자신의 체력 가져오기
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy") && !isFighting)
         {
             isFighting = true;
             enemyHealth = other.GetComponent<Health>();
-            playerHealth = other.GetComponent<Health>();
 
+            Debug.Log("전투 시작!");
             InvokeRepeating("AttackEnemy", 0f, attackInterval);
         }
     }
@@ -35,19 +35,18 @@ public class Battle : MonoBehaviour
         if (enemyHealth != null)
         {
             enemyHealth.TakeDamage(attackPower);
-            if (enemyHealth == null)
+
+            if (enemyHealth.currentHealth <= 0)
             {
-                isFighting = false;
-                CancelInvoke("AttackEney");
+                EndBattle();
             }
         }
     }
 
     void EndBattle()
-    {
+    {        
         isFighting = false;
         playerMove.isFighting = false;
         CancelInvoke("AttackEnemy");
     }
-        
 }

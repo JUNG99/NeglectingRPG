@@ -13,4 +13,12 @@ public class PlayerMove : MonoBehaviour
             transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            isFighting = true;
+        }
+    }
 }

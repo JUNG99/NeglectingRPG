@@ -140,8 +140,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1594346040}
     - target: {fileID: 3512092685909395900, guid: 1c3d82aa11542cf4f99e1c9b7b575e91, type: 3}
+      propertyPath: spawnDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3512092685909395900, guid: 1c3d82aa11542cf4f99e1c9b7b575e91, type: 3}
       propertyPath: spawnInterval
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6587440650929563370, guid: 1c3d82aa11542cf4f99e1c9b7b575e91, type: 3}
       propertyPath: m_LocalPosition.x
@@ -428,7 +432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6132114457886991024, guid: f2bb81539cd533044a2621a27af980cd, type: 3}
       propertyPath: attackPower
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6367459644556573143, guid: f2bb81539cd533044a2621a27af980cd, type: 3}
       propertyPath: moveSpeed
